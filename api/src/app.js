@@ -29,6 +29,12 @@ server.get('/', function (req, res) {
     res.send('Hello World')
   })
 
+server.get('/pokemons', router);
+server.get('/pokemons/:idPokemonorname', router); //esta ruta busca por id y name
+// server.post('/pokemons', router);
+server.get('/types', router);
+
+
 //manejo de errores en solicitudes
 
 server.use((err, req, res, next) => {
