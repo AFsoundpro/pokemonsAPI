@@ -31,7 +31,7 @@ server.get('/', function (req, res) {
 
 server.get('/pokemons', router);
 server.get('/pokemons/:idPokemonorname', router); //esta ruta busca por id y name
-// server.post('/pokemons', router);
+server.post('/pokemons', router);
 server.get('/types', router);
 
 
